@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_813e3c78089e47d9a170fc5d2f5f71ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_813e3c78089e47d9a170fc5d2f5f71ce" ></div>
+        
+</body>
+<script>    
+    
+            var map_813e3c78089e47d9a170fc5d2f5f71ce = L.map(
+                "map_813e3c78089e47d9a170fc5d2f5f71ce",
+                {
+                    center: [53.879533333333335, -9.14455],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_813e3c78089e47d9a170fc5d2f5f71ce);
+
+            
+
+        
+    
+            var tile_layer_3b0077feea234382934a16abaed6d241 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_813e3c78089e47d9a170fc5d2f5f71ce);
+        
+    
+            var feature_group_cd54bf0e46544ee09307d84c709f5502 = L.featureGroup(
+                {}
+            ).addTo(map_813e3c78089e47d9a170fc5d2f5f71ce);
+        
+    
+            var marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_cd54bf0e46544ee09307d84c709f5502.addLayer(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var marker_d22d8adaaedb49329d0b056d6da4dda8 = L.marker(
+                [53.7744, -8.853],
+                {}
+            ).addTo(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var icon_10aa834867ee4475946945f93ace0d8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d22d8adaaedb49329d0b056d6da4dda8.setIcon(icon_10aa834867ee4475946945f93ace0d8d);
+        
+    
+            marker_d22d8adaaedb49329d0b056d6da4dda8.bindTooltip(
+                `<div>
+                     <b>Connacht GAA Centre</b><br>Westport St Patrick’s v Ballina Stephenites<br>Sat 15:00<br>Senior Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f34ee101625a4ce7af20109bca388acb = L.marker(
+                [53.7744, -8.853],
+                {}
+            ).addTo(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var icon_e7ace63d0c9b448d8e15dd50c052299f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f34ee101625a4ce7af20109bca388acb.setIcon(icon_e7ace63d0c9b448d8e15dd50c052299f);
+        
+    
+            marker_f34ee101625a4ce7af20109bca388acb.bindTooltip(
+                `<div>
+                     <b>Connacht GAA Centre</b><br>Ballintubber v Knockmore<br>Sat 17:00<br>Senior Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c0eec2298254a5f9b32166962914e86 = L.marker(
+                [54.1118, -9.1649],
+                {}
+            ).addTo(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var icon_b4f2d6b4fa5a496296dbe7827e04e721 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9c0eec2298254a5f9b32166962914e86.setIcon(icon_b4f2d6b4fa5a496296dbe7827e04e721);
+        
+    
+            marker_9c0eec2298254a5f9b32166962914e86.bindTooltip(
+                `<div>
+                     <b>James Stephens Park, Ballina</b><br>Belmullet v Breaffy<br>Sun 13:30<br>Senior Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a60e4030868f475f88464726e42bf96d = L.marker(
+                [53.7221, -8.995],
+                {}
+            ).addTo(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var icon_0c1ba99e248148f6adcee2b52d6976de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a60e4030868f475f88464726e42bf96d.setIcon(icon_0c1ba99e248148f6adcee2b52d6976de);
+        
+    
+            marker_a60e4030868f475f88464726e42bf96d.bindTooltip(
+                `<div>
+                     <b>Claremorris Town Pitch</b><br>Garrymore v Castlebar Mitchels<br>Sun 15:30<br>Senior Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_204f7c295b6f46ca918c976f8836a409 = L.marker(
+                [53.8456, -9.2361],
+                {}
+            ).addTo(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var icon_eec6a1ecda694c6d910bd2af4cc629db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_204f7c295b6f46ca918c976f8836a409.setIcon(icon_eec6a1ecda694c6d910bd2af4cc629db);
+        
+    
+            marker_204f7c295b6f46ca918c976f8836a409.bindTooltip(
+                `<div>
+                     <b>Breaffy</b><br>Davitts v Kiltane<br>Sat 14:00<br>Senior Relegation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e9ea5daba55446c91cc043e54028a36 = L.marker(
+                [53.672, -8.9612],
+                {}
+            ).addTo(marker_cluster_229ce18cc2064a67bdcbbbc7eb462eb7);
+        
+    
+            var icon_7fe95cbcbab34a96863a59bd6ae15752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9e9ea5daba55446c91cc043e54028a36.setIcon(icon_7fe95cbcbab34a96863a59bd6ae15752);
+        
+    
+            marker_9e9ea5daba55446c91cc043e54028a36.bindTooltip(
+                `<div>
+                     <b>Davitts GAA Club</b><br>Balla v Aghamore<br>Sun 14:00<br>Senior Relegation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_d79d44f536a54970b1bbb958e3615d33 = L.featureGroup(
+                {}
+            ).addTo(map_813e3c78089e47d9a170fc5d2f5f71ce);
+        
+    
+            var marker_cluster_786be6222e3c4a81ae89811b495bab85 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_d79d44f536a54970b1bbb958e3615d33.addLayer(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var marker_0708cd2c007447268f44fa4850d0b0de = L.marker(
+                [53.9358, -8.9543],
+                {}
+            ).addTo(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var icon_ef1667a7a65c4d9dbac7a40fdd1ce3b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0708cd2c007447268f44fa4850d0b0de.setIcon(icon_ef1667a7a65c4d9dbac7a40fdd1ce3b2);
+        
+    
+            marker_0708cd2c007447268f44fa4850d0b0de.bindTooltip(
+                `<div>
+                     <b>Robert McCallion Memorial Pitch</b><br>Crossmolina Deel Rovers v Kilmaine<br>Sat 15:00<br>Intermediate Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bd2d7dc534f43ee87e818408a90dcc9 = L.marker(
+                [53.8262, -9.4103],
+                {}
+            ).addTo(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var icon_e03be6cb9b0f4d908fc567a648ee5851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bd2d7dc534f43ee87e818408a90dcc9.setIcon(icon_e03be6cb9b0f4d908fc567a648ee5851);
+        
+    
+            marker_8bd2d7dc534f43ee87e818408a90dcc9.bindTooltip(
+                `<div>
+                     <b>Islandeady</b><br>Louisburgh v Hollymount-Carramore<br>Sat 15:00<br>Intermediate Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac14cba10156468ba88e96397dd655c4 = L.marker(
+                [53.7744, -8.853],
+                {}
+            ).addTo(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var icon_e49103b7a9c9486c8620b45ffabfa149 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac14cba10156468ba88e96397dd655c4.setIcon(icon_e49103b7a9c9486c8620b45ffabfa149);
+        
+    
+            marker_ac14cba10156468ba88e96397dd655c4.bindTooltip(
+                `<div>
+                     <b>Connacht GAA Centre</b><br>Mayo Gaels v Bohola Moy Davitts<br>Sat 20:00<br>Intermediate Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_884937acc05a47efafc5cd8edd4d809d = L.marker(
+                [53.9602, -8.8059],
+                {}
+            ).addTo(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var icon_6f936d87071a4a5bbf61c07926c7576e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_884937acc05a47efafc5cd8edd4d809d.setIcon(icon_6f936d87071a4a5bbf61c07926c7576e);
+        
+    
+            marker_884937acc05a47efafc5cd8edd4d809d.bindTooltip(
+                `<div>
+                     <b>Charlestown</b><br>Parke-Keelogues-Crimlin v Ballyhaunis<br>Sun 14:00<br>Intermediate Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0af8570e320144bc98bdc60685e615f7 = L.marker(
+                [54.105, -9.3078],
+                {}
+            ).addTo(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var icon_c564d42721564d6497a506eadb12a9e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0af8570e320144bc98bdc60685e615f7.setIcon(icon_c564d42721564d6497a506eadb12a9e4);
+        
+    
+            marker_0af8570e320144bc98bdc60685e615f7.bindTooltip(
+                `<div>
+                     <b>Crossmolina</b><br>Ardnaree Sarsfields v Lahardane MacHales<br>Sun 12:00<br>Intermediate Relegation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a4dcb028a1b4fdf9813a0fdf72695c0 = L.marker(
+                [53.8483, -9.013],
+                {}
+            ).addTo(marker_cluster_786be6222e3c4a81ae89811b495bab85);
+        
+    
+            var icon_67ea33cd8ecb44498cf79b4e4ee91fd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a4dcb028a1b4fdf9813a0fdf72695c0.setIcon(icon_67ea33cd8ecb44498cf79b4e4ee91fd3);
+        
+    
+            marker_8a4dcb028a1b4fdf9813a0fdf72695c0.bindTooltip(
+                `<div>
+                     <b>Kiltimagh GAA Club</b><br>Swinford v Ballinrobe<br>Sun 12:00<br>Intermediate Relegation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_5fb912aa552f45c6ac85a45d1fc9bb6e = L.featureGroup(
+                {}
+            ).addTo(map_813e3c78089e47d9a170fc5d2f5f71ce);
+        
+    
+            var marker_cluster_c72d28127ca34211bb7f74b3d0360da0 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_5fb912aa552f45c6ac85a45d1fc9bb6e.addLayer(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var marker_6a5c460a6fc04c1ea368a521e482c157 = L.marker(
+                [53.9112, -9.1989],
+                {}
+            ).addTo(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var icon_9188c6a8dd794e30b4ce24a09818afc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_6a5c460a6fc04c1ea368a521e482c157.setIcon(icon_9188c6a8dd794e30b4ce24a09818afc6);
+        
+    
+            marker_6a5c460a6fc04c1ea368a521e482c157.bindTooltip(
+                `<div>
+                     <b>Parke GAA Pitch</b><br>Kilmeena v Killala<br>Sat 14:00<br>Junior Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ded9e57242584570b0b9509748fbfda5 = L.marker(
+                [54.1406, -9.7408],
+                {}
+            ).addTo(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var icon_1d21bbafca4442b38686f81467e4dab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_ded9e57242584570b0b9509748fbfda5.setIcon(icon_1d21bbafca4442b38686f81467e4dab3);
+        
+    
+            marker_ded9e57242584570b0b9509748fbfda5.bindTooltip(
+                `<div>
+                     <b>Bangor Erris</b><br>Kilcommin v Achill<br>Sat 15:30<br>Junior Quarter-final Playoff
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ebda7642e0a4b49ac89ac97a8e18ae3 = L.marker(
+                [54.0253, -9.1767],
+                {}
+            ).addTo(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var icon_d77bbef176d64523b06c2a1016a16a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_8ebda7642e0a4b49ac89ac97a8e18ae3.setIcon(icon_d77bbef176d64523b06c2a1016a16a14);
+        
+    
+            marker_8ebda7642e0a4b49ac89ac97a8e18ae3.bindTooltip(
+                `<div>
+                     <b>Knockmore GAA Club</b><br>Islandeady v Ballycastle<br>Sun 15:30<br>Junior Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b3c366ecdce49928fd0d77356694cd1 = L.marker(
+                [54.0244, -9.8262],
+                {}
+            ).addTo(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var icon_38367d7e626c4500a8f2a2bf1642c58e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_4b3c366ecdce49928fd0d77356694cd1.setIcon(icon_38367d7e626c4500a8f2a2bf1642c58e);
+        
+    
+            marker_4b3c366ecdce49928fd0d77356694cd1.bindTooltip(
+                `<div>
+                     <b>Ballycroy</b><br>Ballycroy v Moygownagh<br>Sat 15:00<br>Junior B Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6ec791cfa6b43179b950d27fd3b07ab = L.marker(
+                [53.6554, -9.3751],
+                {}
+            ).addTo(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var icon_cbed2c95d24a4aaf88c59c1bb55be577 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_d6ec791cfa6b43179b950d27fd3b07ab.setIcon(icon_cbed2c95d24a4aaf88c59c1bb55be577);
+        
+    
+            marker_d6ec791cfa6b43179b950d27fd3b07ab.bindTooltip(
+                `<div>
+                     <b>Tuar Mhic Eadaigh</b><br>Tuar Mhic Eadaigh v Kilmovee Shamrocks<br>Sun 14:00<br>Junior B Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2648319d65574802a3f3f27b39f19fec = L.marker(
+                [53.7245, -8.8767],
+                {}
+            ).addTo(marker_cluster_c72d28127ca34211bb7f74b3d0360da0);
+        
+    
+            var icon_e7a7b0a3851f46f59a5b2c30c2677bbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_2648319d65574802a3f3f27b39f19fec.setIcon(icon_e7a7b0a3851f46f59a5b2c30c2677bbd);
+        
+    
+            marker_2648319d65574802a3f3f27b39f19fec.bindTooltip(
+                `<div>
+                     <b>Brickens</b><br>Eastern Gaels v Lacken<br>Sun 14:00<br>Junior B Quarter-final
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_af279c3320df4db4945b1d250739894b = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3b0077feea234382934a16abaed6d241,
+                },
+                overlays :  {
+                    "senior" : feature_group_cd54bf0e46544ee09307d84c709f5502,
+                    "intermediate" : feature_group_d79d44f536a54970b1bbb958e3615d33,
+                    "junior" : feature_group_5fb912aa552f45c6ac85a45d1fc9bb6e,
+                },
+            };
+            L.control.layers(
+                layer_control_af279c3320df4db4945b1d250739894b.base_layers,
+                layer_control_af279c3320df4db4945b1d250739894b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_813e3c78089e47d9a170fc5d2f5f71ce);
+        
+</script>
