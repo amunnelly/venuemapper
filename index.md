@@ -2,5 +2,5 @@
 
 ## October 23 & 24, 2021
 
-<iframe src="maps/fixtures.html" height="75%" width="90%"></iframe>
+<iframe src="maps/fixtures.html" height="500" width="800"></iframe>
 
