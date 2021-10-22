@@ -44,7 +44,7 @@ class VenueMapper(object):
     def tooltip_creator(self, d):
         venue = "".join(["<b>", d['venue'], "</b>"])
         match = "".join([d['teamA'], " v ", d['teamB']])
-        time = d['gamedate'].strftime('%a') + " " + d['gamedate'].strftime("%H:%M")
+        time = "".join(["<i>", d['gamedate'].strftime('%a'), " ", d['gamedate'].strftime("%H:%M"), "</i>"])
         details = "".join([d['level'], " ", str(d['stage'])])
         return "<br>".join([venue, match, time, details])
 
@@ -71,7 +71,7 @@ class VenueMapper(object):
                     "Junior B": "lightred"}
 
         self.m = folium.Map(location=[self.df.lat.mean(), self.df.long.mean()],
-                zoom_start=9,
+                zoom_start=10,
                 control_scale=True)
 
         senior_group = folium.FeatureGroup(name='senior')
