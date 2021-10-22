@@ -3,7 +3,7 @@ import folium
 from folium.plugins import MarkerCluster
 import numpy as np
 
-class VenueMaker(object):
+class VenueMapper(object):
 
     def __init__(self, fixtures):
         self.df = pd.read_csv('data/fixtures.csv')
@@ -109,4 +109,4 @@ class VenueMaker(object):
 
 
 if __name__ == "__main__":
-    x = VenueMaker('data/fixtures.csv')
+    x = VenueMapper('data/fixtures.csv')
